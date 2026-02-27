@@ -5,7 +5,7 @@ var app=express();
 app.set('views',path.join(__dirname,"views"));
 app.set('view engine','pug');
 app.get('/home',(req,res)=>{
-const subjects=['DevOps','CC','SPM','CNS'];
+const subjects=['DevOps','CC','SPM','CNS','CC LAB','CNSLAB','CD'];
 res.render("sample.pug",{'sub':subjects});
 })
 app.listen(4000,()=>{
